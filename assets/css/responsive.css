@@ -1,0 +1,103 @@
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width:63.9375em) {
+    /*make better UX, nó sẽ ghi đè lên css trong file style.css */
+    .button-btn {
+        padding: 15px 16px;     
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;  
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-infor {
+        line-height: 2;
+    }
+    .contact-submit-btn {
+        font-size: 16px;
+    }
+    #footer .social-list {
+        font-size: 38px;
+    }
+
+    #footer .social-list a {
+        margin: 0 8px;
+    }
+
+    #footer .coppyright a {
+        padding: 13px 0;
+        display: inline-block;
+    }
+}
+
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width:63.9375em) {
+    
+}
+
+/* Mobile */
+@media (max-width:46.1875em) {
+
+    .mobile-full-width, .mobile-col-full {
+        width: 100% !important;     /*giúp hiển thị full độ rộng của tag, giúp tickets xuống dòng, button send rộng full*/
+    }
+
+    .mobile-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    #header {
+        overflow: hidden;   /*khi đối tượng con vượt quá thẻ cha chứa chúng thì ẩn chúng  đi*/
+    }
+
+    #header .mobile-menu-button{
+        display: block;
+    }
+
+    #header .search-button {
+        display: none;  /*ẩn search button trên mobile*/
+    }
+
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {     /*giúp khi bấm vào Home ở mobile nó không bị lên đầu*/
+        display:inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;  /* value default, giúp hiển thị phần more*/
+        background-color:black;
+    }
+
+    #nav .subnav a {
+        color: white;
+        padding: 0px 12px;  
+    }
+         /*giúp ảnh hiển thị theo hàng dọc, mỗi ảnh dài đúng chiều ngang*/
+       
+  
+    #content .member-img {
+        width: 60%;
+    }
+
+   .contact-form {
+       margin-top: 32px;
+   }
+
+}
